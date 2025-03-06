@@ -1,0 +1,14 @@
+git config --global user.name Giovanni-Bestana-Fernandes
+git config --global user.email giovanni.best.fernandes@gmail.com
+
+dotnet new sln --name YourMenu
+dotnet new mvc -o YourMenu
+dotnet sln add YourMenu\YourMenu.csproj
+
+cd SoniaStore
+
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.1
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 9.0.1
+dotnet add package MySql.EntityFrameworkCore --version 9.0.0
