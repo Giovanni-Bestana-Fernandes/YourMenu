@@ -5,6 +5,7 @@ namespace YourMenu.Models;
 
 public class EstabelecimentoDefinicao
 {
+    [Key]
     [Required(ErrorMessage = "Por favor, informe o Id do Estabelecimento")]
     public int EstabelecimentoId { get; set; }
     [ForeignKey("EstabelecimentoId")]
