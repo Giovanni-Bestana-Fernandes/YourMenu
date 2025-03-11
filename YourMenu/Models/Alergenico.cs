@@ -1,6 +1,6 @@
 namespace YourMenu.Models;
 
-public class Alergenicos
+public class Alergenico
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace YourMenu.Models;
-public class Sacola
+public class SacolaItem
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

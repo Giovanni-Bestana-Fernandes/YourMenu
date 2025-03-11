@@ -23,17 +23,14 @@ public class Pedido
 
         public StatusPedido Status { get; set; }
 
-        [Required(ErrorMessage = "Por favor, informe o Id da Forma de Pagamento")]
         public int FormaPagamentoId { get; set; }
         [ForeignKey("FormaPagamentoId")]
         public FormaPagamento FormaPagamento { get; set; }
 
-        [Required(ErrorMessage = "Por favor, informe o Id da Forma de Entrega")]
         public int FormaEntregaId { get; set; }
         [ForeignKey("FormaEntregaId")]
         public FormaEntrega FormaEntrega { get; set; }
 
-        [Required(ErrorMessage = "Por favor, informe o Id da Endereco")]
         public int EnderecoId { get; set; }
         [ForeignKey("EnderecoId")]
         public Endereco Endereco { get; set; }
@@ -42,6 +39,10 @@ public class Pedido
         public int ComandaId { get; set; }
         [ForeignKey("ComandaId")]
         public Comanda Comanda { get; set; }
+
+        public int MesaId { get; set; }
+        [ForeignKey("MesaId")]
+        public Mesa Mesa { get; set; }
 
         public DateTime DataInsercao { get; set; } 
 }

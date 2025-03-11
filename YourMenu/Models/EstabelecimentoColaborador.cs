@@ -19,5 +19,8 @@ public class EstabelecimentoColaborador
     [ForeignKey("UsuarioId")]
     public Usuario Usuario { get; set; }
 
-
+    [Required(ErrorMessage = "Por favor, informe o acesso que quer conceder a esse usuário")]
+    public int AreaAcessoId { get; set; }
+    [ForeignKey("AreaAcessoId")]
+    public AreaAcesso AreaAcesso { get; set; }
 }

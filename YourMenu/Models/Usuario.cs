@@ -32,5 +32,10 @@ namespace YourMenu.Models
         public string Telefone { get; set; }
 
         public string Foto { get; set; }
+
+        [Required(ErrorMessage = "Por favor, informe com qual serviço você deseja cadastrar")]
+        public int RoleId { get; set; }
+        [ForeignKey("RoleId")]
+        public Role Role { get; set; }
     }
 }
